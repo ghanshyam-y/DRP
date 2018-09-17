@@ -15,7 +15,7 @@ There are three major component of this project:
  
  The ETL pipeline can be run from the data directory:
  ```$xslt
-python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db
+python process_data.py disaster_messages.csv disaster_categories.csv mydata.db
 
 ```
  
@@ -24,7 +24,7 @@ python process_data.py disaster_messages.csv disaster_categories.csv DisasterRes
 The cleaned data stored in the SQLite databas is used to train a model. A machine learning pipeline that uses NLTK, as well as scikit-learn's Pipeline and GridSearchCV is used to output a final model. The model is then exported as a pickle file.
 The ML pipeline can be run from the models directory:
 ```$xslt
-python train_classifier.py ../data/DisasterResponse.db classifier.pkl
+python train_classifier.py ../data/mydata.db model.pkl
 
 ```
 
