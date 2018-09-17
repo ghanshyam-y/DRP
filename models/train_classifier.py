@@ -23,7 +23,7 @@ def load_data(file_path):
     """
     print('Loading data...\n    PATH: {}\n'.format(file_path))
     engine = create_engine('sqlite:///{}'.format(file_path))
-    df = pd.read_sql_table('mydata1', engine)
+    df = pd.read_sql_table('mydata', engine)
     X = df['message'].values
     y = df.drop(['id','message','original','genre'], axis=1).values
     categories = df.columns[4:]
