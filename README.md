@@ -19,7 +19,7 @@ python process_data.py disaster_messages.csv disaster_categories.csv mydata.db
 
 ```
  
- <h4> Machine Learning Pipeline </>
+ <h4> Machine Learning Pipeline </h4>
  
 The cleaned data stored in the SQLite databas is used to train a model. A machine learning pipeline that uses NLTK, as well as scikit-learn's Pipeline and GridSearchCV is used to output a final model. The model is then exported as a pickle file.
 The ML pipeline can be run from the models directory:
