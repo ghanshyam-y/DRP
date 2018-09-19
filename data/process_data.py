@@ -59,7 +59,7 @@ def save_data(data, database_filepath):
     :return:
     """
     engine = create_engine('sqlite:///{}'.format(database_filepath))
-    data.to_sql('mydata1', engine, index=False)
+    data.to_sql('mydata', engine, index=False)
 
 def run_pipeline(categories_path, messages_path, database_filepath):
     """
